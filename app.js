@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const squares = document.querySelectorAll('.grid')
+    const squares = document.querySelectorAll('.grid div')
     const result = document.querySelector('#result')
     const displayCurrentPlayer = document.querySelector('#current-player')
     let currentPlayer = 1
 
-    for (let i = 0, len = squares.length; i < len; i++)
+    for (var i = 0, len = squares.length; i < len; i++)
 
         (function(index){
         //add an onlcick to each square in the grid
-            squares[i].onClick = function(){
+            squares[i].onclick = function(){
             // if the square below your current square is taken, you can go ontop of it
                 if(squares[index + 7].classList.contains('taken')) {
                     if (currentPlayer === 1) {
@@ -27,6 +27,5 @@ document.addEventListener('DOMContentLoaded', () => {
                     // if the square below your current square is not taken, you cant go here
                 } else alert('Can not go here')
             }
-
-        })
+        })(i)
 })
