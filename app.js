@@ -28,4 +28,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else alert('Can not go here')
             }
         })(i)
+
+
+    //Check the board for win or loose 
+    function checkBoard() {
+        //make const that shows all winning rows
+        const winningArray = [
+            [0, 1, 2, 3],
+        ]
+    }
+    
+
+
+
+
+
+
+
+
 })
