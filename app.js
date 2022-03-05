@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function checkBoard() {
         //make const that shows all winning rows
         const winningArray = [
-            [0, 1, 2, 3],[41, 40, 39, 38]
+            [0, 1, 2, 3],[41, 40, 39, 38],[7, 8, 9, 10]
         ]
     }
     
