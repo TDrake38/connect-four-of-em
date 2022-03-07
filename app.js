@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     //Check the board for win or loose 
+        //TODO: after someone wins reset the board.
     function checkBoard() {
         //make const that shows all winning rows
         const winningArray = [
